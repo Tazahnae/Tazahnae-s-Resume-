@@ -2,130 +2,187 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Tazahnae Matthews – Cybersecurity Resume</title>
+  <title>Tazahnae Matthews – Health-Tech & Cybersecurity Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <style>
+    :root{
+      --olive:#808000;
+      --olive-dark:#556B2F;
+      --panel:#3a3a3a;
+      --accent:#f0e68c;
+      --text:#ffffff;
+      --muted:#cccccc;
+    }
+    *{box-sizing:border-box}
     body {
-      font-family: 'Lora', serif;
-      background-color: #808000; /* Olive Green */
-      color: #fff;
-      margin: 0;
-      padding: 0;
+      font-family:'Lora',serif;
+      background-color:var(--olive);
+      color:var(--text);
+      margin:0;
     }
     header {
-      background-color: #556B2F;
-      padding: 40px 20px;
-      text-align: center;
+      background:linear-gradient(180deg,var(--olive-dark),#475a26);
+      padding:44px 20px 36px;
+      text-align:center;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.8em;
-      font-family: 'Playfair Display', serif;
+      margin:0;
+      font-size:2.8rem;
+      letter-spacing:.3px;
+      font-family:'Playfair Display',serif;
     }
     header p {
-      font-size: 1.1em;
-      margin-top: 10px;
+      font-size:1.05rem;
+      margin-top:10px;
+      opacity:.95;
     }
     .container {
-      max-width: 850px;
-      margin: 40px auto;
-      background-color: #3a3a3a;
-      padding: 30px 40px;
-      border-radius: 10px;
-      box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
+      max-width:900px;
+      margin:42px auto;
+      background-color:var(--panel);
+      padding:36px 42px;
+      border-radius:12px;
+      box-shadow:0 8px 24px rgba(0,0,0,.35);
     }
     h2 {
-      font-family: 'Playfair Display', serif;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
-      color: #f0e68c;
-      margin-top: 40px;
+      font-family:'Playfair Display',serif;
+      border-bottom:1px solid var(--muted);
+      padding-bottom:6px;
+      color:var(--accent);
+      margin-top:36px;
+      margin-bottom:14px;
     }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 10px;
-      line-height: 1.6;
-    }
-    p {
-      line-height: 1.6;
-    }
-    a {
-      color: #f0e68c;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .footer {
-      text-align: center;
-      font-size: 0.9em;
-      padding: 20px;
-      color: #ccc;
-      font-style: italic;
-    }
+    ul{padding-left:22px;margin-top:6px}
+    li{margin-bottom:10px;line-height:1.65}
+    p{line-height:1.7;margin:0 0 12px 0}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .subtle{color:var(--muted);font-style:italic}
+    .role{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:18px;margin-bottom:6px}
+    .role b{font-size:1.02rem}
+    .tagline{max-width:900px;margin:12px auto 0;font-size:.95rem;color:var(--accent)}
+    .footer{text-align:center;font-size:.9em;padding:20px;color:var(--muted);font-style:italic}
+    .chiplist{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .chip{border:1px solid rgba(240,230,140,.45);color:var(--accent);padding:6px 10px;border-radius:999px;font-size:.9rem}
+    @media (max-width:640px){.container{padding:26px 20px}}
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Tazahnae Matthews</h1>
-    <p>Cybersecurity Enthusiast | Newark, NJ · <a href="mailto:t.matthews@steamforme.org">t.matthews@steamforme.org</a></p>
-  </header>
+<header>
+  <h1>Tazahnae  Matthews</h1>
+  <p>Executive Assistant · Health-Tech & Cybersecurity · Newark, NJ ·
+    <a href="mailto:t.matthews@steamforme.org">t.matthews@steamforme.org</a> ·
+    <a href="https://www.linkedin.com/in/tazahnae-matthews-347124190" target="_blank" rel="noopener">LinkedIn</a> ·
+    <a href="https://github.com/Tazahnae" target="_blank" rel="noopener">GitHub</a>
+  </p>
+  <div class="tagline">Organized systems. Protected data. People-centered operations.</div>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <section>
-      <h2>Professional Summary</h2>
-      <p>
-        I am a passionate cybersecurity learner with a growing toolkit of hands-on experience in ethical hacking, system defense, and virtual labs. I thrive in environments where I can solve real problems, collaborate with others, and continuously build my skills. With a background in health services and a sharp eye for detail, I bring a unique perspective to protecting systems and data. I’m especially driven to create inclusive, secure tech spaces—and I’m ready to jump in, contribute, and grow with a forward-thinking team.
-      </p>
-    </section>
+  <section>
+    <h2>Professional Summary</h2>
+    <p>
+     I am a versatile and forward-thinking <b>Executive Assistant & Health-Tech Professional</b> with a foundation in
+      <b>Health Service Management</b> and a growing specialization in <b>cybersecurity, IT systems, and program coordination</b>.
+      Skilled in executive calendar management, agenda creation, and official meeting minutes; adept at KPI reporting
+      and designing efficient workflows that keep complex operations running smoothly. Currently pursuing
+      <b>CompTIA Security+ (2025)</b> and an <b>IT Program Management Certificate</b> to bridge healthcare operations,
+      technology, and data protection.
+    </p>
+  </section>
 
-    <section>
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>Kali Linux, Ubuntu, Bash scripting</li>
-        <li>Tools: Metasploit, Nmap, Wireshark, iptables</li>
-        <li>Networking: TCP/IP, DNS, Subnetting, Firewalls</li>
-        <li>Git & GitHub, CLI workflow</li>
-        <li>Virtualization: UTM (Mac), VirtualBox, pfSense</li>
-        <li>Documentation, communication, and team collaboration</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Core Skills</h2>
+    <div class="chiplist">
+      <span class="chip">Executive Calendars & Meeting Ops</span>
+      <span class="chip">Agenda & Minutes Writing</span>
+      <span class="chip">KPI & Weekly Reporting</span>
+      <span class="chip">Workflow & Process Design</span>
+      <span class="chip">Health Systems: Athena, Dentrix</span>
+      <span class="chip">Quickbase</span>
+      <span class="chip">Microsoft 365 · Google Workspace</span>
+      <span class="chip">VirtualBox · pfSense · GitHub</span>
+      <span class="chip">Cybersecurity Foundations</span>
+      <span class="chip">Data Privacy & Compliance Awareness</span>
+      <span class="chip">Stakeholder & Vendor Communication</span>
+    </div>
+  </section>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Penetration Testing Lab:</strong> Simulated attacks using Metasploit and Nmap on Metasploitable2 to identify and exploit known vulnerabilities.</li>
-        <li><strong>Firewall Rule Testing:</strong> Designed and tested network access policies using pfSense and iptables in a virtual environment.</li>
-        <li><strong>GitHub Resume Site:</strong> Developed and deployed this professional resume using GitHub Pages and custom HTML/CSS.</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Professional Experience</h2>
 
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Cybersecurity Foundations</strong> – The Knowledge House (2025)</li>
-        <li><strong>Associate in Health Service Administration</strong> – Berkeley College, Newark NJ (2022)</li>
-      </ul>
-    </section>
+    <div class="role">
+      <b>Executive Assistant – Department of Public Works, Division of Public Buildings</b>
+      <span class="subtle">City of Newark, NJ · Nov 2024 – Present</span>
+    </div>
+    <ul>
+      <li>Manage <b>executive calendars</b>, coordinate meetings, and prepare detailed <b>agendas</b> and official <b>meeting minutes</b>.</li>
+      <li>Maintain and optimize the <b>Quickbase</b> complaint-tracking system; ensure accurate data, timely follow-ups, and KPI generation.</li>
+      <li>Produce and distribute <b>KPI reports</b>, performance summaries, and weekly updates for leadership and cross-functional teams.</li>
+      <li>Oversee <b>supervisor scheduling</b>, call-out logs, and site coverage across multiple municipal facilities.</li>
+      <li>Design digital filing systems, task logs, and workflow templates that improve visibility and accountability.</li>
+    </ul>
 
-    <section>
-      <h2>Certifications</h2>
-      <ul>
-        <li>CompTIA Security+ (In Progress, 2025 goal)</li>
-        <li>Google Cybersecurity Certificate – Coursera (Planned)</li>
-      </ul>
-    </section>
+    <div class="role">
+      <b>Office Manager / Executive Dental Assistant – Greater Essex Dental</b>
+      <span class="subtle">Newark, NJ · Nov 2023 – Aug 2024</span>
+    </div>
+    <ul>
+      <li>Owned daily operations, patient scheduling, and vendor coordination; served as the main point of contact.</li>
+      <li><b>Created and implemented procedures and protocols</b> that improved accuracy, speed, and compliance.</li>
+      <li>Managed <b>treatment plans</b>, <b>pharmacy scripts</b>, and lab orders with HIPAA-aligned practices.</li>
+      <li>Utilized <b>Athena</b> and <b>Dentrix</b> for billing, patient records, and insurance coordination.</li>
+      <li>Handled opening/closing duties; trained staff and strengthened patient and vendor relationships.</li>
+    </ul>
 
-  </div>
+    <div class="role">
+      <b>Program Coordinator – STEAM for Me (Nonprofit)</b>
+      <span class="subtle">Newark, NJ · 2023 – Present (Part-Time)</span>
+    </div>
+    <ul>
+      <li>Design and coordinate <b>STEAM mentorship programs</b> (coding, robotics, digital literacy) for Newark youth.</li>
+      <li>Develop curriculum, organize volunteers, and foster school/community partnerships.</li>
+      <li>Support <b>grant writing</b>, program data tracking, and event operations to drive measurable impact.</li>
+    </ul>
+  </section>
 
-  <div class="footer">
-    © 2025 Tazahnae Matthews · Built with 💻 and GitHub Pages
-  </div>
+  <section>
+    <h2>Highlighted Projects</h2>
+    <ul>
+      <li><b>AWS Passwordless Authentication & SOC Simulation</b> — Built secure sign-in with AWS Cognito passkeys (WebAuthn) and MFA; integrated SOC-style monitoring and documentation.</li>
+      <li><b>Cyber Training Range Lab</b> — Deployed Kali Linux and Metasploitable 2 to simulate attacks, analyze vulnerabilities, and document mitigations and firewall hardening.</li>
+      <li><b>Public Buildings KPI Automation</b> — Redesigned Quickbase tracking/reporting to improve efficiency and supervisor accountability for city operations.</li>
+      <li><b>Tech Farmers STEAM Sandbox</b> — Authored multi-level Python & Web Dev modules for middle-school learners; hosted and versioned via GitHub & Codespaces.</li>
+      <li><b>Dental Office Protocol Framework</b> — Created workflow checklists, pharmacy script templates, and treatment-plan systems to standardize care and data accuracy.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li><b>Associate of Applied Science</b> — Health Service Management, Berkeley College (Newark, NJ) · 2022</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Certifications & Training</h2>
+    <ul>
+      <li><b>CompTIA Security+</b> — In Progress (Target 2025)</li>
+      <li><b>IT Program Management Certificate</b> — LinkedIn Learning (2025)</li>
+      <li><b>Cybersecurity Innovation Fellowship</b> — The Knowledge House (Dec 2025)</li>
+      <li><b>CCNA</b> — In Progress (Target Dec 2025)</li>
+     
+    </ul>
+  </section>
+
+</div>
+
+<div class="footer">
+  © 2025 Tazahnae  Matthews · Built with 💻 and GitHub Pages
+</div>
 
 </body>
 </html>
-
