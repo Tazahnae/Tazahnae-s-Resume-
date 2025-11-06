@@ -2,265 +2,256 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Tazahnae  Matthews – Health-Tech & Cybersecurity Resume</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌻 TaZahnae Matthews — Professional Résumé</title>
+  <meta name="description" content="Professional résumé for TaZahnae Matthews — Executive Assistant & Health-Tech professional specializing in cybersecurity, IT systems, and program coordination."/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%220.9em%22 font-size=%2290%22>🌻</text></svg>">
+
   <style>
     :root{
-      --olive:#808000;
-      --olive-dark:#556B2F;
-      --panel:#2f2f2f;
-      --panel-2:#3a3a3a;
-      --accent:#f0e68c;
-      --text:#ffffff;
-      --muted:#cfcfcf;
-      --hair:#4b4b4b;
-      --chip:rgba(240,230,140,.45);
+      --sunflower:#ffc512;       /* highlight yellow */
+      --olive:#708238;           /* olive green */
+      --olive-ink:#2f3b18;       /* deep olive for text accents */
+      --burnt:#cc5500;           /* burnt orange */
+      --cream:#fffaf2;           /* warm background */
+      --paper:#ffffffcc;         /* card bg */
+      --ink:#1e1e1e;             /* text */
+      --muted:#5f4a3a;           /* warm brown text */
     }
+
     *{box-sizing:border-box}
     html,body{margin:0;padding:0}
     body{
-      font-family:'Lora',serif;
-      background:var(--olive);
-      color:var(--text);
-      line-height:1.7;
-    }
-    header{
-      background:linear-gradient(180deg,var(--olive-dark),#475a26);
-      padding:48px 20px 36px;
-      text-align:center;
-    }
-    header h1{
-      margin:0 0 8px 0;
-      font-size:2.8rem;
-      font-family:'Playfair Display',serif;
-      letter-spacing:.2px;
-    }
-    header p{
-      margin:0;
-      font-size:1.05rem;
-      opacity:.95;
-    }
-    .links a{color:var(--accent);text-decoration:none}
-    .links a:hover{text-decoration:underline}
-    .tagline{
-      margin-top:12px;
-      color:var(--accent);
-      font-size:.98rem;
-    }
-
-    /* Layout */
-    .container{
-      max-width:960px;
-      margin:42px auto;
-      padding:0 18px;
-    }
-    section{
-      background:var(--panel);
-      border:1px solid var(--hair);
-      border-radius:12px;
-      padding:26px 24px;
-      box-shadow:0 8px 24px rgba(0,0,0,.25);
-      margin-bottom:22px;
-    }
-    h2{
-      font-family:'Playfair Display',serif;
-      color:var(--accent);
-      font-size:1.6rem;
-      margin:0 0 14px 0;
-      padding-bottom:6px;
-      border-bottom:1px solid var(--hair);
-    }
-    p{margin:0 0 12px 0}
-
-    /* Chips */
-    .chiplist{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .chip{border:1px solid var(--chip);color:var(--accent);padding:6px 10px;border-radius:999px;font-size:.9rem;white-space:nowrap}
-
-    /* Experience Cards */
-    .role-card{
-      background:var(--panel-2);
-      border:1px solid var(--hair);
-      border-radius:12px;
-      padding:18px 18px 4px 18px;
-      margin:16px 0;
-    }
-    .role-head{
-      display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
-      margin-bottom:6px;
-    }
-    .role-title{
-      font-weight:700;font-size:1.05rem
-    }
-    .role-meta{
-      color:var(--muted);font-style:italic;font-size:.98rem
-    }
-    .bullets{
-      list-style:disc outside;
-      padding-left:20px;
-      margin:10px 0 14px 0;
-    }
-    .bullets li{
-      margin-bottom:10px;
+      font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(900px 400px at 10% -5%, rgba(255,197,18,.20), transparent 60%),
+        radial-gradient(900px 400px at 90% -10%, rgba(204,85,0,.16), transparent 60%),
+        linear-gradient(180deg, var(--cream) 0%, #fff3e0 45%, #fde0c2 100%);
       line-height:1.65;
     }
 
-    /* Projects list */
-    .proj-list{list-style:disc outside;padding-left:20px;margin:8px 0 0 0}
-    .proj-list li{margin-bottom:10px}
+    /* Header */
+    header{
+      position:sticky; top:0; z-index:10;
+      background:linear-gradient(90deg, var(--olive), var(--burnt));
+      color:#fff; padding:1.6rem 1rem 1.2rem; text-align:center;
+      border-bottom:1px solid rgba(255,255,255,.25);
+      box-shadow:0 6px 18px rgba(204,85,0,.18);
+    }
+    .title{margin:0; font-size:clamp(1.8rem,3vw,2.2rem); letter-spacing:.3px}
+    .subtitle{margin:.25rem 0 0; opacity:.92; font-weight:600}
+    .tabs{
+      margin: .9rem auto 0; display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap
+    }
+    .tabs a{
+      display:inline-flex; align-items:center; gap:.4rem;
+      color:#fff; text-decoration:none; font-weight:700; letter-spacing:.2px;
+      background:rgba(255,255,255,.16); padding:.5rem .9rem; border-radius:999px;
+      transition:.25s ease;
+    }
+    .tabs a:hover{ background:var(--sunflower); color:#4a2b00 }
+    .tabs i{ width:18px; height:18px }
 
-    /* Links */
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
+    /* Layout */
+    main{ max-width:980px; margin:2rem auto; padding:0 1.25rem }
+    section{
+      background:var(--paper);
+      border:1px solid rgba(204,85,0,.20);
+      border-radius:14px;
+      padding:1.35rem 1.5rem;
+      margin-bottom:1.35rem;
+      box-shadow:0 8px 18px rgba(204,85,0,.06);
+      transition:.25s ease;
+    }
+    section:hover{ transform:translateY(-2px); box-shadow:0 14px 28px rgba(204,85,0,.10) }
+    .section-title{
+      display:flex; align-items:center; gap:.55rem;
+      font-size:1.15rem; font-weight:800; color:var(--burnt); margin:0 0 .8rem;
+    }
+    .section-title i{ width:20px; height:20px; color:var(--olive) }
+
+    /* Text & helpers */
+    .muted{ color:var(--muted) }
+    .pill{
+      display:inline-block; border:1px solid rgba(112,130,56,.35);
+      color:var(--olive-ink); background:rgba(255,255,255,.75);
+      border-radius:999px; padding:.22rem .6rem; font-size:.85rem; font-weight:700;
+    }
+    .grid{
+      display:grid; gap:.75rem;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    }
+    .role{ font-weight:800; color:#38230f }
+    .orgline{ margin:.2rem 0 .55rem; color:#70431a; font-weight:600 }
+    ul{ margin:.35rem 0 .1rem 0; padding-left:1.1rem }
+    li{ margin:.28rem 0 }
 
     /* Footer */
-    .footer{
-      text-align:center;
-      color:var(--muted);
-      font-style:italic;
-      padding:24px 12px 40px;
-      font-size:.95rem;
-    }
+    footer{ text-align:center; padding:2rem 1rem; color:rgba(30,30,30,.7); font-weight:600 }
 
-    /* Mobile tweaks */
-    @media (max-width:640px){
-      header h1{font-size:2.2rem}
-      .container{padding:0 14px}
-      section{padding:22px 16px}
+    /* Buttons */
+    .btn{
+      display:inline-flex; align-items:center; gap:.45rem;
+      background:linear-gradient(180deg, var(--sunflower), #e6b100);
+      color:#4a2b00; border:none; border-radius:999px;
+      padding:.6rem 1rem; text-decoration:none; font-weight:800;
+      box-shadow:0 10px 24px rgba(255,197,18,.18);
+      transition:.25s ease;
+    }
+    .btn:hover{ filter:brightness(1.06); transform:translateY(-1px) }
+    .btn i{ width:18px; height:18px }
+
+    /* Small tweaks */
+    @media (max-width:600px){
+      .title{ font-size:1.7rem }
+      section{ padding:1.15rem 1.1rem }
     }
   </style>
 </head>
-<body>
 
+<body>
+  <!-- Header -->
   <header>
-    <h1>Tazahnae Matthews</h1>
-    <p class="links">
-      Executive Assistant · Health-Tech & Cybersecurity · Newark, NJ ·
-      <a href="mailto:t.matthews@steamforme.org">t.matthews@steamforme.org</a> ·
-      <a href="https://www.linkedin.com/in/tazahnae-matthews-347124190" target="_blank" rel="noopener">LinkedIn</a> ·
-      <a href="https://github.com/Tazahnae" target="_blank" rel="noopener">GitHub</a>
-    </p>
-    <div class="tagline">Organized systems. Protected data. People-centered operations.</div>
+    <h1 class="title">🌻 TaZahnae Matthews</h1>
+    <p class="subtitle">Executive Assistant & Health-Tech • Cybersecurity-Minded • Program Coordination</p>
+    <nav class="tabs" aria-label="Profile quick links">
+      <a href="https://www.linkedin.com/in/tazahnae-matthews-347124190" target="_blank" rel="noreferrer noopener"><i data-feather="linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/Tazahnae" target="_blank" rel="noreferrer noopener"><i data-feather="github"></i> GitHub</a>
+      <a href="https://tazahnae.github.io/Cyber-Blooms/" target="_blank" rel="noreferrer noopener"><i data-feather="globe"></i> Portfolio</a>
+      <a href="https://www.steamforme.org" target="_blank" rel="noreferrer noopener"><i data-feather="heart"></i> STEAM for Me</a>
+      <a href="mailto:tazahnaematthews@gmail.com"><i data-feather="mail"></i> Email</a>
+    </nav>
   </header>
 
-  <main class="container">
-
-    <section aria-labelledby="summary">
-      <h2 id="summary">Professional Summary</h2>
-      <p>
-       I am a  versatile and forward-thinking <b>Executive Assistant & Health-Tech Professional</b> with a foundation in
-        <b>Health Service Management</b> and growing specialization in <b>cybersecurity, IT systems, and program coordination</b>.
-        Skilled in executive calendar management, agenda creation, official meeting minutes, KPI reporting, and building
-        efficient workflows that keep complex operations running smoothly. Currently pursuing <b>CompTIA Security+ (2025)</b>
-        and an <b>IT Program Management</b> certificate to bridge healthcare operations, technology, and data protection.
+  <main>
+    <!-- Professional Summary -->
+    <section id="summary">
+      <h2 class="section-title"><i data-feather="user"></i><span>Professional Summary</span></h2>
+      <p class="muted">
+        I am a versatile and forward-thinking <strong>Executive Assistant & Health-Tech Professional</strong> with a foundation in Health Service Management and a growing specialization in
+        <strong>cybersecurity, IT systems, and program coordination</strong>. Skilled in executive calendar management, agenda creation, official meeting minutes, KPI reporting, and
+        building efficient workflows that keep complex operations running smoothly. Currently pursuing <strong>CompTIA Security+ (2025)</strong> and an <strong>IT Program Management</strong> certificate
+        to bridge healthcare operations, technology, and data protection.
       </p>
-    </section>
-
-   
-    <section aria-labelledby="skills">
-      <h2 id="skills">Core Skills</h2>
-      <div class="chiplist" role="list">
-        <span class="chip">Executive Calendars & Meeting Ops</span>
-        <span class="chip">Agenda & Minutes Writing</span>
-        <span class="chip">KPI & Weekly Reporting</span>
-        <span class="chip">Workflow & Process Design</span>
-        <span class="chip">Health Systems: Athena, Dentrix</span>
-        <span class="chip">Quickbase</span>
-        <span class="chip">Microsoft 365 · Google Workspace</span>
-        <span class="chip">VirtualBox · pfSense · GitHub</span>
-        <span class="chip">Cybersecurity Foundations</span>
-        <span class="chip">Data Privacy & Compliance Awareness</span>
-        <span class="chip">Stakeholder & Vendor Communication</span>
+      <div style="margin-top:.7rem; display:flex; gap:.6rem; flex-wrap:wrap">
+        <a class="btn" href="https://tazahnae.github.io/Tazahnae-s-Resume-/" target="_blank" rel="noreferrer noopener">
+          <i data-feather="file-text"></i> View Live Résumé
+        </a>
       </div>
     </section>
 
-    <section aria-labelledby="experience">
-      <h2 id="experience">Professional Experience</h2>
+    <!-- Core Skills -->
+    <section id="skills">
+      <h2 class="section-title"><i data-feather="star"></i><span>Core Skills</span></h2>
+      <div class="grid">
+        <span class="pill">Executive Calendars & Meeting Ops</span>
+        <span class="pill">Agenda & Minutes Writing</span>
+        <span class="pill">KPI & Weekly Reporting</span>
+        <span class="pill">Workflow & Process Design</span>
+        <span class="pill">Health Systems: Athena, Dentrix</span>
+        <span class="pill">Quickbase</span>
+        <span class="pill">Microsoft 365 · Google Workspace</span>
+        <span class="pill">VirtualBox · pfSense · GitHub</span>
+        <span class="pill">Cybersecurity Foundations</span>
+        <span class="pill">Data Privacy & Compliance Awareness</span>
+        <span class="pill">Stakeholder & Vendor Communication</span>
+      </div>
+    </section>
 
-      <article class="role-card">
-        <div class="role-head">
-          <div class="role-title">Executive Assistant — Department of Public Works, Division of Public Buildings</div>
-          <div class="role-meta">City of Newark, NJ · Nov 2024 – Present</div>
-        </div>
-        <ul class="bullets">
-          <li>Manage <b>executive calendars</b>, schedule meetings, and prepare detailed <b>agendas</b> and official <b>meeting minutes</b>.</li>
-          <li>Maintain and optimize the <b>Quickbase</b> complaint-tracking system; ensure accurate data entry, timely follow-ups, and KPI generation.</li>
-          <li>Produce and distribute <b>KPI reports</b>, performance summaries, and weekly updates for leadership and cross-functional teams.</li>
-          <li>Oversee <b>supervisor scheduling</b>, call-out logs, and coverage coordination across multiple municipal facilities.</li>
+    <!-- Professional Experience -->
+    <section id="experience">
+      <h2 class="section-title"><i data-feather="briefcase"></i><span>Professional Experience</span></h2>
+
+      <div>
+        <div class="role">Executive Assistant — Department of Public Works, Division of Public Buildings</div>
+        <div class="orgline">City of Newark, NJ · Nov 2024 – Present</div>
+        <ul>
+          <li>Manage executive calendars, schedule meetings, and prepare detailed agendas and official meeting minutes.</li>
+          <li>Maintain and optimize the <strong>Quickbase</strong> complaint-tracking system; ensure accurate data entry, timely follow-ups, and KPI generation.</li>
+          <li>Produce and distribute KPI reports, performance summaries, and weekly updates for leadership and cross-functional teams.</li>
+          <li>Oversee supervisor scheduling, call-out logs, and coverage coordination across multiple municipal facilities.</li>
           <li>Design digital filing systems, task logs, and workflow templates that improve visibility and accountability.</li>
         </ul>
-      </article>
+      </div>
 
-      
+      <hr style="border:0;height:1px;background:linear-gradient(90deg,transparent,rgba(204,85,0,.45),transparent); margin:1rem 0"/>
 
-      <article class="role-card">
-        <div class="role-head">
-          <div class="role-title">Office Manager / Executive Dental Assistant — Greater Essex Dental</div>
-          <div class="role-meta">Newark, NJ · Nov 2023 – Aug 2024</div>
-        </div>
-        <ul class="bullets">
+      <div>
+        <div class="role">Office Manager / Executive Dental Assistant — Greater Essex Dental</div>
+        <div class="orgline">Newark, NJ · Nov 2023 – Aug 2024</div>
+        <ul>
           <li>Owned daily operations, patient scheduling, and vendor coordination; served as the main point of contact.</li>
-          <li><b>Created and implemented procedures and protocols</b> that improved accuracy, speed, and compliance.</li>
-          <li>Managed <b>treatment plans</b>, <b>pharmacy scripts</b>, and lab orders with HIPAA-aligned practices.</li>
-          <li>Utilized <b>Athena</b> and <b>Dentrix</b> for billing, patient records, and insurance coordination.</li>
+          <li>Created and implemented procedures and protocols that improved accuracy, speed, and compliance.</li>
+          <li>Managed treatment plans, pharmacy scripts, and lab orders with HIPAA-aligned practices.</li>
+          <li>Utilized <strong>Athena</strong> and <strong>Dentrix</strong> for billing, patient records, and insurance coordination.</li>
           <li>Handled opening/closing duties; trained staff and strengthened patient and vendor relationships.</li>
         </ul>
-      </article>
+      </div>
 
-      
+      <hr style="border:0;height:1px;background:linear-gradient(90deg,transparent,rgba(204,85,0,.45),transparent); margin:1rem 0"/>
 
-      <article class="role-card">
-        <div class="role-head">
-          <div class="role-title">Program Coordinator — STEAM for Me (Nonprofit)</div>
-          <div class="role-meta">Newark, NJ · 2023 – Present (Part-Time)</div>
-        </div>
-        <ul class="bullets">
-          <li>Design and coordinate <b>STEAM mentorship programs</b> (coding, robotics, digital literacy) for Newark youth.</li>
+      <div>
+        <div class="role">Program Coordinator — STEAM for Me (Nonprofit)</div>
+        <div class="orgline">Newark, NJ · 2023 – Present (Part-Time)</div>
+        <ul>
+          <li>Design and coordinate STEAM mentorship programs (coding, robotics, digital literacy) for Newark youth.</li>
           <li>Develop lesson plans, organize volunteers, and foster school/community partnerships.</li>
-          <li>Support <b>grant writing</b>, program data tracking, and event operations to drive measurable impact.</li>
+          <li>Support grant writing, program data tracking, and event operations to drive measurable impact.</li>
         </ul>
-      </article>
+      </div>
     </section>
 
-    
-
-    <section aria-labelledby="projects">
-      <h2 id="projects">Highlighted Projects</h2>
-      <ul class="proj-list">
-        <li><b>AWS Passwordless Authentication & SOC Simulation</b> — Built secure sign-in with AWS Cognito passkeys (WebAuthn) and MFA; integrated SOC-style monitoring and documentation.</li>
-        <li><b>Cyber Training Range Lab</b> — Deployed Kali Linux and Metasploitable 2 to simulate attacks, analyze vulnerabilities, and document mitigations and firewall hardening.</li>
-        <li><b>Public Buildings KPI Automation</b> — Redesigned Quickbase tracking/reporting to improve efficiency and supervisor accountability for city operations.</li>
-        <li><b>Tech Farmers STEAM Sandbox</b> — Authored multi-level Python & Web Dev modules for middle-school learners; hosted and versioned via GitHub & Codespaces.</li>
-        <li><b>Dental Office Protocol Framework</b> — Created workflow checklists, pharmacy script templates, and treatment-plan systems to standardize care and data accuracy.</li>
+    <!-- Highlighted Projects -->
+    <section id="projects">
+      <h2 class="section-title"><i data-feather="folder"></i><span>Highlighted Projects</span></h2>
+      <ul>
+        <li><strong>AWS Passwordless Authentication & SOC Simulation</strong> — Built secure sign-in with AWS Cognito passkeys (WebAuthn) and MFA; integrated SOC-style monitoring and documentation.</li>
+        <li><strong>Cyber Training Range Lab</strong> — Deployed Kali Linux and Metasploitable 2 to simulate attacks, analyze vulnerabilities, and document mitigations and firewall hardening.</li>
+        <li><strong>Public Buildings KPI Automation</strong> — Redesigned Quickbase tracking/reporting to improve efficiency and supervisor accountability for city operations.</li>
+        <li><strong>Tech Farmers STEAM Sandbox</strong> — Authored multi-level Python & Web Dev modules for middle-school learners; hosted and versioned via GitHub & Codespaces.</li>
+        <li><strong>Dental Office Protocol Framework</strong> — Created workflow checklists, pharmacy script templates, and treatment-plan systems to standardize care and data accuracy.</li>
       </ul>
     </section>
 
-    <section aria-labelledby="education">
-      <h2 id="education">Education</h2>
-      <ul class="proj-list">
-        <li><b>Associate of Applied Science</b> — Health Service Management, Berkeley College (Newark, NJ) · 2022</li>
+    <!-- Education -->
+    <section id="education">
+      <h2 class="section-title"><i data-feather="book-open"></i><span>Education</span></h2>
+      <p><strong>Associate of Applied Science — Health Service Management</strong>, Berkeley College (Newark, NJ) · 2022</p>
+    </section>
+
+    <!-- Certifications & Training -->
+    <section id="certifications">
+      <h2 class="section-title"><i data-feather="award"></i><span>Certifications & Training</span></h2>
+      <ul>
+        <li><strong>CompTIA Security+</strong> — In Progress (Target 2025)</li>
+        <li><strong>IT Program Management Certificate</strong> — LinkedIn Learning (2025)</li>
+        <li><strong>Cybersecurity Innovation Fellowship</strong> — The Knowledge House (Dec 2025)</li>
+        <li><strong>CCNA</strong> — In Progress (Target Dec 2025)</li>
       </ul>
     </section>
 
-    
-
-    <section aria-labelledby="certs">
-      <h2 id="certs">Certifications & Training</h2>
-      <ul class="proj-list">
-        <li><b>CompTIA Security+</b> — In Progress (Target 2025)</li>
-        <li><b>IT Program Management Certificate</b> — LinkedIn Learning (2025)</li>
-        <li><b>Cybersecurity Innovation Fellowship</b> — The Knowledge House (Dec 2025)</li>
-        <li><b>CCNA</b> — In Progress (Target Dec 2025)</li>
-        
-      </ul>
+    <!-- Links (optional quick access) -->
+    <section id="links">
+      <h2 class="section-title"><i data-feather="link-2"></i><span>Quick Links</span></h2>
+      <div class="grid">
+        <a class="btn" href="https://tazahnae.github.io/Tazahnae-s-Resume-/" target="_blank" rel="noreferrer noopener"><i data-feather="file-text"></i> Live Résumé</a>
+        <a class="btn" href="https://tazahnae.github.io/Cyber-Blooms/" target="_blank" rel="noreferrer noopener"><i data-feather="globe"></i> Portfolio</a>
+        <a class="btn" href="https://www.linkedin.com/in/tazahnae-matthews-347124190" target="_blank" rel="noreferrer noopener"><i data-feather="linkedin"></i> LinkedIn</a>
+        <a class="btn" href="https://github.com/Tazahnae" target="_blank" rel="noreferrer noopener"><i data-feather="github"></i> GitHub</a>
+        <a class="btn" href="https://www.steamforme.org" target="_blank" rel="noreferrer noopener"><i data-feather="heart"></i> STEAM for Me</a>
+      </div>
     </section>
-
   </main>
-  
 
-  <footer class="footer">
-    © 2025 Tazahnae  Matthews · Built with 💻 and GitHub Pages
+  <footer>
+    © 2025 Tazahnae Matthews · Built with 💻 and GitHub Pages
   </footer>
 
+  <script>
+    feather.replace();
+  </script>
 </body>
 </html>
